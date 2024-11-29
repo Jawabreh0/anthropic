@@ -1,4 +1,4 @@
-# Anthopic Stream Docs
+# Anthopic Stream Response Docs
 
 A- Without Tools 
 
