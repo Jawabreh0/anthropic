@@ -1,6 +1,4 @@
-# anthropic
-
-## Anthropic Stream Response: 
+# Anthopic Stream Docs
 
 A- Without Tools 
 
