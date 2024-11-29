@@ -4,7 +4,7 @@
 
 A- Without Tools 
 
-1- First message comes with type `message_startz` This message holds two important info `model` and `usage.input_tokens`
+1- First message comes with type `message_start` This message holds two important info `model` and `usage.input_tokens`
 
 It comes with this format 
 
@@ -80,3 +80,29 @@ it comes with this format
   }
 }
 ```
+
+
+Summary 
+
+So this is how to extract the data from the chunks
+
+1- model : from the first chunk where chunk.type = ‘message_start’
+```js 
+const model = chunk.message.model
+```
+
+2- message: from the chunks where chunk.type = ‘content_block_delta`
+```js 
+const message_part = chunk.delta.text
+```
+
+3- usage from the last chunk where where chunk.type = ‘message_stop` 
+
+ ```
+ js cosnt  inputTokenCount = {chunk.amazon-bedrock-invocationMetric}
+```
+
+  ```js
+  cosnt  outputTokenCount = {chunk.amazon-bedrock-invocationMetric}
+```
+
