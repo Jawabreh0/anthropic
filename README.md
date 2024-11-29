@@ -237,7 +237,7 @@ const message_part = chunk.delta.text
 
 - usage from the last chunk where where chunk.type = ‘message_stop` 
 
- ```
- js cosnt  inputTokenCount = {chunk.amazon-bedrock-invocationMetric}
+ ```js
+cosnt  inputTokenCount = {chunk.amazon-bedrock-invocationMetric}
 ```
 
