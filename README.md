@@ -5,8 +5,10 @@
 A- Without Tools 
 
 1- First message comes with type `message_startz` This message holds two important info `model` and `usage`
+
 It comes with this format 
-```json
+
+```
 {
   type: 'message_start',
   message: {
